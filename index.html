@@ -23,16 +23,19 @@
       <h1 class="title">PING<span>.</span></h1>
       <h2 class="sub-title">We are launching <span>soon!</span></h2>
       <p class="description">Subscribe and get notified</p>
-      <form action="" method="post" class="subscribe-form">
-        <input
-          name="email"
-          type="email"
-          autocomplete="email"
-          aria-label="email"
-          class="textfield"
-          placeholder="Your email address..."
-        />
-        <div class="error">Please provide a valid email address</div>
+      <form action="" method="post" id="subscribe-form" class="subscribe-form">
+        <div class="input-element">
+          <input
+            name="email"
+            type="text"
+            autocomplete="email"
+            aria-label="email"
+            class="textfield"
+            placeholder="Your email address..."
+          />
+          <div class="error">Please provide a valid email address</div>
+        </div>
+
         <button type="submit" class="button">Notify Me</button>
       </form>
       <img
@@ -59,5 +62,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>

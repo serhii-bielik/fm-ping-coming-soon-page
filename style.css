@@ -75,9 +75,12 @@ body {
   gap: 0.8rem;
   margin: 2rem 0.8rem 0;
 }
-
-.textfield {
+.input-element {
+  position: relative;
   flex-grow: 1;
+}
+.textfield {
+  width: 100%;
   padding: 0.8rem 2rem;
   border-radius: 1.5rem;
   font-size: 0.8rem;
@@ -86,9 +89,16 @@ body {
 .textfield::placeholder {
   color: var(--clr-pale-blue);
 }
+.textfield-error {
+  border: 1px solid var(--clr-light-red);
+}
 .error {
   display: none;
+  margin: 0.5rem 0 0.8rem;
+  font-size: 0.7rem;
+  color: var(--clr-light-red);
 }
+
 .button {
   padding: 0.8rem 3rem;
   border-radius: 1.5rem;
@@ -99,7 +109,7 @@ body {
   border: 1px solid var(--clr-bule);
   box-shadow: var(--clr-pale-blue) 0px 7px 13px -3px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .button:hover {
@@ -157,5 +167,10 @@ body {
 
   .subscribe-form {
     flex-direction: row;
+  }
+
+  .error {
+    position: absolute;
+    left: 2rem;
   }
 }
