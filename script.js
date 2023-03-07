@@ -1,4 +1,4 @@
-const subscribeForm = document.querySelector('#subscribe-form');
+const subscribeForm = document.querySelector('.subscribe-form');
 const errorHint = document.querySelector('.error');
 const emailField = document.querySelector('.textfield');
 
