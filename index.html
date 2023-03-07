@@ -15,19 +15,31 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
     <main class="container">
       <h1 class="title">PING<span>.</span></h1>
-      <h2 class="sub-title">We are launching soon!</h2>
-      <p>Subscribe and get notified</p>
-      <form action="" method="post">
-        <label for="email" class="sr-only">email</label>
-        <input id="email" type="email" autocomplete="email" class="textfield" />
+      <h2 class="sub-title">We are launching <span>soon!</span></h2>
+      <p class="description">Subscribe and get notified</p>
+      <form action="" method="post" class="subscribe-form">
+        <input
+          name="email"
+          type="email"
+          autocomplete="email"
+          aria-label="email"
+          class="textfield"
+          placeholder="Your email address..."
+        />
         <div class="error">Please provide a valid email address</div>
         <button type="submit" class="button">Notify Me</button>
       </form>
+      <img
+        src="./images/illustration-dashboard.png"
+        alt=""
+        class="illustration"
+      />
     </main>
 
     <footer class="footer">

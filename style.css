@@ -14,7 +14,7 @@
   --clr-pale-blue: #c2d3ff;
   --clr-light-red: #ff5263;
   --clr-gray: #969696;
-
+  --clr-white: #ffffff;
 }
 
 input,
@@ -23,8 +23,119 @@ button {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
   font-family: var(--ff);
   font-size: 20px;
   font-weight: 300;
   color: var(--clr-text);
+}
+
+/* Main */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.title > span {
+  color: var(--clr-bule);
+}
+.sub-title {
+  color: var(--clr-gray);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.sub-title > span {
+  color: var(--clr-text);
+  font-weight: 700;
+}
+.description {
+  font-size: 0.8rem;
+}
+
+/* Form */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 2rem 0.8rem 0;
+}
+
+.textfield {
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--clr-pale-blue);
+}
+.textfield::placeholder {
+  color: var(--clr-pale-blue);
+}
+.error {
+  display: none;
+}
+.button {
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--clr-white);
+  background-color: var(--clr-bule);
+  border: 1px solid var(--clr-bule);
+  box-shadow: var(--clr-pale-blue) 0px 7px 13px -3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(1px);
+  box-shadow: var(--clr-bule) 0px 7px 13px -3px;
+}
+.button:active {
+  transform: translateY(5px) scale(0.95);
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+  margin-top: 3.5rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.socials > * {
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  border: 1px solid var(--clr-pale-blue);
+  border-radius: 50%;
+  color: var(--clr-bule);
+  cursor: pointer;
+}
+.copyright {
+  font-size: 0.7rem;
+  color: var(--clr-gray);
 }
