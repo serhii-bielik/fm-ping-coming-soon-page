@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff: 'Libre Franklin', sans-serif;
+
+  --clr-bule: #4f7df3;
+  --clr-text: #151f29;
+  --clr-pale-blue: #c2d3ff;
+  --clr-light-red: #ff5263;
+  --clr-gray: #969696;
+
+}
+
+input,
+button {
+  font: inherit;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--clr-text);
+}
